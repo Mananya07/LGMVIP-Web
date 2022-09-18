@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: pink;
+
+}
+
+.calculator{
+    width: 370px;
+    background: rgb(133, 33, 50);
+    color: rgb(4, 4, 4);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    border-radius: 10px;
+    padding: 1rem;
+    font-weight: bold;
+    box-shadow: 5px 5px 3px rgb(37, 7, 7);
+}
+
+.output{
+    font-size: 3.4rem;
+    text-align: right;
+    padding-top: 1.5rem;
+    padding-bottom: 0.75rem;
+    padding-right: 10px;
+    padding-left: 10px;
+    color: rgb(0, 0, 0);
+    margin-bottom: 1.5rem;
+    width: 100%;
+    border: none;
+    display: block;
+    outline: rgb(99, 64, 64);
+    border-radius: 3px;
+    box-shadow: inset 3px 3px 3px rgb(59, 13, 23);
+}
+
+.keys{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 3px;
+}
+
+.key{
+    background: whitesmoke;
+    border: none;
+    font-size: 1.5rem;
+    color: rgb(235, 224, 224);
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+    border-radius: 3px;
+    background-color: rgb(81, 15, 44);
+    margin: 0.3rem;
+}
+
+.key-ent, .key-zero{
+    width: 157px;
+}
+
+.key:active,
+.key:focus{
+    background: black;
+}
+
+.key-op:focus{
+    color:rgb(0, 0, 0);
+    background: beige;
+}
+
+
