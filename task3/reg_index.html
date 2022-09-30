@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Table</title>
+	<link rel="stylesheet" href="reg_styles.css">
+</head>
+<body>
+<h2>Registration Form</h2>
+	<form onsubmit="Submit()">
+		<table>
+			
+				<tr>
+					<th>First Name</th>
+					<td><input type="text" name="fname" id="fname" placeholder="First Name"></td>
+				</tr>
+			
+			
+				<tr>
+					<th>Last Name</th>
+					<td><input type="text" name="lname" id="lname" placeholder="Last Name"></td>
+				</tr>
+				<tr>
+					<th>Email</th>
+					<td><input type="text" name="email" id="email" placeholder="Email ID"></td>
+				</tr>
+                
+				<tr>
+					<th>Skills</th>
+                    
+                    <td><input type="radio" rowspan="1" name="skills" id="skills"  value="HTML">HTML
+                    <input type="radio" rowspan="1" name="skills" id="skills"  value="CSS">CSS
+                    <input type="radio" rowspan="1" name="skills" id="skills"  value="JS">JS</td>
+                    
+                </tr>
+				<tr>
+                    <td></td>
+					<center><td rowspan="3"><input type="button" name="button" id="btn" class="button" value="Submit" onclick="Details()"></td></center>
+				</tr>
+			
+		</table>
+    </form>
+		<table border="2" id="show">
+			<thead>
+				<tr>
+					<th>First Name</th>
+					<th>Last Name</th>
+					<th>Email</th>
+					<th>Skills</th>
+				</tr>
+			</thead>
+		</table>
+
+<script src="reg_script.js"></script>
+</body>
+</html>
